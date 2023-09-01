@@ -14,7 +14,9 @@ const EmployeesListItem = (props) => {
 
         return (
             <li className={classNames}>
-                <span onClick={onToggleProp} data-toggle="rise" className="list-group-item-label">{name}</span>
+                <span onClick={onToggleProp}
+                      data-toggle="rise"
+                      className="list-group-item-label">{name}</span>
                 <input type="text" className="list-group-item-input" value={salary + '$'} onChange={(event) => {
                     const val = parseInt(event.target.value);
                     onChangeItemSalary(val);
